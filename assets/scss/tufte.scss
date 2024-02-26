@@ -209,17 +209,40 @@ p {
 /* end chapter epigraphs styles */
 
 blockquote {
+  position: relative;
+  width: 50%;
+  padding: 5px 10px;
   font-size: 1.4rem;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+blockquote::before {
+  content: "\201c";
+  font-size: 5rem;
+  opacity: 0.3;
+  position: absolute;
+  left: -3rem;
+  top: -1rem;
 }
 
 blockquote p {
-  width: 50%;
+  width: 100%;
 }
 
 blockquote footer {
-  width: 50%;
+  width: 100%;
   font-size: 1.1rem;
   text-align: right !important;
+}
+
+blockquote .highlight {
+  width: 95%;
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3 {
+  margin: 0;
 }
 
 ol,
