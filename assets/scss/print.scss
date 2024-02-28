@@ -1,0 +1,44 @@
+@media print {
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+    page-break-before: always;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  article {
+    max-width: 100%;
+  }
+
+  article p {
+    width: 70%;
+  }
+
+  .sidenote,
+  .marginnote {
+    margin-right: -50%;
+  }
+
+  hr,
+  nav,
+  footer,
+  body .js-toggle-wrapper {
+    display: none;
+  }
+}
