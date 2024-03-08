@@ -47,7 +47,7 @@ hr {
   max-width: 45rem;
   border-style: solid none none none;
   border-width: 2px;
-  border-color: #1d1f21;
+  border-color: --var(--text-color);
 }
 
 kbd {

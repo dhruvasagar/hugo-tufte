@@ -14,25 +14,25 @@
 
   h2,
   h3 {
+    page-break-before: avoid;
     page-break-after: avoid;
-    page-break-before: always;
   }
 
+  html,
   body {
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   article {
     max-width: 100%;
   }
 
-  article p {
-    width: 70%;
-  }
-
   .sidenote,
   .marginnote {
-    margin-right: -50%;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
   }
 
   hr,
