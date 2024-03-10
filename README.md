@@ -25,7 +25,7 @@ You'll need to install Hugo Extended for this theme to test it locally, since th
     choco install hugo-extended # remember, you might need admin privs
     ```
 - On macOS:
-  + Using [Homebrew](https://brew.sh/):
+  - Using [Homebrew](https://brew.sh/):
     ```shell
     brew install hugo
     ```
@@ -107,14 +107,14 @@ Please see [`exampleSite/config.yaml`](https://github.com/loikein/hugo-tufte/blo
 
 - `math` boolean: If `true`, try to render the page's LaTeX code using KaTeX.
 - `meta` boolean: If `true`, display page metadata such as author, date, categories.
-  + `hideDate` boolean: If `true`, do not display a page date in metadata.
-  + `hideReadTime` boolean: if `true`, do not display the page's reading time
-  estimate in metadata.
+  - `hideDate` boolean: If `true`, do not display a page date in metadata.
+  - `hideReadTime` boolean: if `true`, do not display the page's reading time
+    estimate in metadata.
 - `toc` boolean: if true, display the table of contents for the page.
 - Layout parameters: (NEW)
-  + For more information, see [Hugo's Lookup Order | Hugo](https://gohugo.io/templates/lookup-order/).
-  + `type` string: If set to `book`, layout files in [./layouts/book/](https://github.com/loikein/hugo-tufte/tree/main/layouts/book) will be prioritised.
-  + `layout` string: If set, layout files with the name of this field's value will be prioritised.
+  - For more information, see [Hugo's Lookup Order | Hugo](https://gohugo.io/templates/lookup-order/).
+  - `type` string: If set to `book`, layout files in [./layouts/book/](https://github.com/loikein/hugo-tufte/tree/main/layouts/book) will be prioritised.
+  - `layout` string: If set, layout files with the name of this field's value will be prioritised.
 
 ### Shortcodes
 
@@ -128,3 +128,4 @@ For usage and examples, refer to [./exampleSite/content/posts/tufte-features.md 
 - `epigraph`
 - `marginnote`
 - `sidenote`
+- `slideshare`
