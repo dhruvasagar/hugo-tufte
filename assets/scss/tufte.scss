@@ -436,6 +436,11 @@ kbd {
   line-height: 1.42;
 }
 
+.highlight code {
+  color: inherit;
+  background-color: inherit;
+}
+
 h1 .code,
 h2 .code,
 h3 .code {
