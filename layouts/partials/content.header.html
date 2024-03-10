@@ -17,11 +17,25 @@
   {{- end -}}
 
   {{- if not .Params.hidereadtime -}}
-  <span>{{ .ReadingTime }} min read&nbsp;</span>
+  <p class="readtime">{{ .ReadingTime }} min read</p>
   {{- end -}}
 
-  {{- range .Params.tags -}}
-  <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;
+  {{- if .Params.tags -}}
+    <p class="tags">
+      Tags: &nbsp;
+      {{- range .Params.tags -}}
+      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;
+      {{- end -}}
+    </p>
+  {{- end -}}
+
+  {{- if .Params.categories -}}
+    <p class="categories">
+      Categories: &nbsp;
+      {{- range .Params.categories -}}
+      <a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;
+      {{- end -}}
+    </p>
   {{- end -}}
 </span>
 {{- end -}}
