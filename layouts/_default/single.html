@@ -1,9 +1,3 @@
-{{/*  
-
-  This template render single pages 
-
-*/}}
-
 {{ define "main" }}
 <article id="main">
   {{ partial "content.header.html" . }}
@@ -11,6 +5,5 @@
   <section>{{ .Content }}</section>
   <section>{{ partial "comments.html" . }}</section>
   <section>{{ partial "footer.html" . }}</section>
-  <section>{{ partial "nav.html" . }}</section>
 </article>
 {{ end }}

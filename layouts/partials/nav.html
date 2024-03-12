@@ -1,7 +1,8 @@
 <nav class="menu">
-    <ul>
+  <ul>
     {{ range .Site.Menus.nav  }}
-        <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a></li>
+    <li><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a></li>
     {{ end }}
-    </ul>
+    <li>{{ partial "theme-toggle" . }}</li>
+  </ul>
 </nav>
