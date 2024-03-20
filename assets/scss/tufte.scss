@@ -102,7 +102,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
   line-height: 1;
 }
@@ -114,7 +115,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-style: italic;
   margin-bottom: 0;
 }
@@ -128,6 +130,13 @@ h2 {
 h3 {
   font-size: 1.7rem;
   margin-top: 2rem;
+  color: #ffbf00;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #088f8f;
 }
 
 .author,
