@@ -422,8 +422,10 @@ div.table-wrapper {
     margin-right: 0%;
     max-width: none;
   }
+  blockquote,
   blockquote p,
   blockquote footer {
+    margin: 0;
     width: 90%;
   }
 }
