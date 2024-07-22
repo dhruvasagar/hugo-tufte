@@ -1,3 +1,4 @@
+{{- if (not .Params.disableSharing) -}}
 <!-- Sharingbutton Facebook -->
 <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener" aria-label="">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
@@ -94,3 +95,4 @@
   </div>
 </a>
 
+{{- end -}}
