@@ -1,5 +1,9 @@
-{{- if and (not .Params.disableDisqus) (.Site.Config.Services.Disqus.Shortname) -}}
-  <div style="width: 55%;">
-    {{ template "_internal/disqus.html" . }}
-  </div>
+{{- if not .Params.disableUtterances -}}
+    <script src="https://utteranc.es/client.js"
+	    repo="dhruvasagar/website-issues"
+	    issue-term="pathname"
+	    theme="github-dark"
+	    crossorigin="anonymous"
+	    async>
+    </script>
 {{- end -}}
